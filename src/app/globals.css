@@ -43,7 +43,7 @@ body {
 /* Mobile: subtle rotation, more upward shift, gentler slope */
 @media (max-width: 1080px) {
     .clip-diagonal {
-        transform: scale(1.5) rotate(0deg) translateY(-3%);
+        transform: scale(1.5) rotate(7deg) translateY(-9.2%);
     }
 }
 
