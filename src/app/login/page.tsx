@@ -80,7 +80,7 @@ function Orbit({ error }) {
             />
             <OrbitItem
                 label="DIGITAL"
-                pos="top-[50%] left-[-18%]"
+                pos="top-[50%] left-[-12%]"
                 bg="bg-black"
                 text="text-white"
             />
@@ -155,7 +155,7 @@ export default function LoginPage() {
 
                         <button
                             type="submit"
-                            className="w-[80%] font-roboto bg-purple-800 py-2.5 mt-2 rounded-md text-white font-semibold hover:bg-purple-900 transition"
+                            className="w-[80%] font-roboto duration-300 hover:cursor-pointer bg-purple-800 py-2.5 mt-2 rounded-md text-white font-semibold hover:bg-purple-900 transition"
                         >
                             Enter
                         </button>
@@ -164,7 +164,7 @@ export default function LoginPage() {
                             Forgot password?
                         </div>
 
-                        <div className="font-roboto text-[12px] text-white mt-6 max-sm:text-[9px] text-center">
+                        <div className="font-roboto text-[12px] text-white mt-6 text-center">
                             <p>Contact: team@sey.world</p>
                             <p>© 2025 SEY.WORLD. All rights reserved.</p>
                         </div>
