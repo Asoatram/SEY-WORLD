@@ -4,14 +4,21 @@ import React from "react";
 function OrbitItem({ label, pos, bg = "bg-black", text = "text-white" }) {
     return (
         <div className={`absolute ${pos} z-30`}>
-            <div className={`relative ${bg} ${text} font-roboto
-          text-[clamp(11px,1.2vw,16px)]
+            <div
+                className={`relative ${bg} ${text} font-roboto
+          text-[clamp(11px,1vw,16px)]
           rounded-md w-[22%] h-[9%]
           flex items-center justify-center
-          min-w-[70px] min-h-[30px]`}>
-                {label}
-                <div className={`absolute inset-0 ${bg} rounded-md rotate-[8deg] scale-105 -z-10`} />
-                <div className={`absolute inset-0 ${bg} rounded-md rotate-[-8deg] scale-105 -z-20`} />
+          min-w-[80px] min-h-[30px]
+          transition-all duration-500 ease-in-out
+        `}
+            >
+        <span className="block text-center whitespace-nowrap transition-all duration-500 ease-in-out">
+          {label}
+        </span>
+
+                <div className={`absolute inset-0 transition-all duration-300 ${bg} rounded-md rotate-[8deg] scale-105 -z-10`} />
+                <div className={`absolute inset-0 transition-all duration-300 ${bg} rounded-md rotate-[-8deg] scale-105 -z-20`} />
             </div>
         </div>
     );
@@ -23,19 +30,19 @@ export default function Orbit({ error }) {
             className="
         relative mx-auto aspect-square
         w-[80vw] sm:w-[65vw] md:w-[50vw] lg:w-[40vw] xl:w-[30vw]
-        [--r:50%] sm:[--r:50%] md:[--r:40%] [--t:50%] translate-y-[-45%] md:translate-y-[-25%] lg:translate-y-[5%]
+        [--r:50%] sm:[--r:50%] md:[--r:40%] [--t:50%] translate-y-[-45%] md:translate-y-[-25%] lg:translate-y-[3%]
       "
         >
             {/* center circle */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-center mb-2">
                 <div className="relative w-[60%] aspect-square rounded-full bg-white overflow-hidden z-20 flex items-center justify-center">
                     <div className="absolute inset-0">
                         {[30, 20, 10].map((deg, i) => (
-                            <div key={i} className="absolute inset-0 opacity-50" style={{ transform: `rotate(${deg}deg) scale(2.6)` }}>
+                            <div key={i} className="absolute inset-0 opacity-50" style={{ transform: `rotate(${deg}deg) scale(2.4)` }}>
                                 <Image src="/sey-logo.svg" alt="shadow" width={800} height={899} priority />
                             </div>
                         ))}
-                        <div className="absolute inset-0 z-20" style={{ transform: "scale(2.6)" }}>
+                        <div className="absolute inset-0 z-20" style={{ transform: "scale(2.4)" }}>
                             <Image src="/sey-logo.svg" alt="SEY COOP logo" width={800} height={800} priority />
                         </div>
                         <div className="absolute inset-0 flex items-center justify-center z-30 translate-y-[5%]">
