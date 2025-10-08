@@ -11,6 +11,7 @@ function OrbitItem({ label, pos, bg = "bg-black", text = "text-white" }) {
           flex items-center justify-center
           min-w-[80px] min-h-[30px]
           transition-all duration-500 ease-in-out
+          xl:scale-120
         `}
             >
                 <span className="block text-center whitespace-nowrap transition-all duration-500 ease-in-out">
@@ -35,8 +36,8 @@ export default function Orbit({ error }) {
         relative mx-auto aspect-square
         w-[80vw] sm:w-[65vw] md:w-[50vw] lg:w-[38vw] xl:w-[28vw]
         [--r:50%] sm:[--r:50%] md:[--r:40%] [--t:50%]
-        translate-y-[-30%] md:translate-y-[-25%] lg:translate-y-[16%]
-        lg:scale-[0.9] xl:scale-[0.85]   /* 👈 slightly smaller for desktop only */
+        translate-y-[-30%] md:translate-y-[-25%] lg:translate-y-[18%]
+        lg:scale-[0.9] xl:scale-[0.75]   /* 👈 slightly smaller for desktop only */
         m-4 transition-transform duration-500
       "
         >
