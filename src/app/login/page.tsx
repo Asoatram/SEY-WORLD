@@ -37,7 +37,7 @@ export default function LoginPage() {
                             placeholder="Email address"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            className={`font-roboto w-full p-2 rounded-md mt-2 text-black outline-none placeholder-gray-600 transition ${
+                            className={`font-roboto w-full p-1 rounded-md mt-2 text-black outline-none placeholder-gray-600 transition ${
                                 error
                                     ? "bg-red-800 border placeholder-red-300"
                                     : "bg-white border border-transparent"
@@ -49,7 +49,7 @@ export default function LoginPage() {
                             placeholder="Password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            className={`font-roboto w-full p-2 rounded-md mt-2 text-black outline-none placeholder-gray-600 transition ${
+                            className={`font-roboto w-full p-1 rounded-md mt-2 text-black outline-none placeholder-gray-600 transition ${
                                 error
                                     ? "bg-red-800 border placeholder-red-300"
                                     : "bg-white border border-transparent"
