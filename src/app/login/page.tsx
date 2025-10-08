@@ -20,10 +20,10 @@ export default function LoginPage() {
         <main className="min-h-screen flex items-center justify-center bg-black relative overflow-hidden text-white pb-10">
             <div className="absolute inset-0 bg-white clip-diagonal" />
 
-            <div className="relative z-10 flex flex-col items-center text-center translate-y-10 md:translate-y-4 scale-[1.1] sm:scale-[1.1] md:scale-[1.15] max-sm:translate-y-10 max-sm:scale-[0.85] w-full">
+            <div className="relative z-10 flex flex-col items-center text-center translate-y-10 md:translate-y-20 lg:translate-y-4 scale-[1.1] sm:scale-[1.1] md:scale-[1.15] max-sm:translate-y-10 max-sm:scale-[0.85] w-full">
                 <Orbit error={error} />
 
-                <div className="h-full -mt-10 md:mt-0 lg:mb-12 w-full flex justify-center">
+                <div className="h-full -mt-10 md:mt-2 lg:mb-12 w-full flex justify-center">
                     <form
                         onSubmit={handleLogin}
                         className="w-[75vw] max-w-[20rem] flex flex-col items-center"

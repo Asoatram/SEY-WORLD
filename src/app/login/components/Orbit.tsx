@@ -30,7 +30,7 @@ export default function Orbit({ error }) {
             className="
         relative mx-auto aspect-square
         w-[80vw] sm:w-[65vw] md:w-[50vw] lg:w-[40vw] xl:w-[30vw]
-        [--r:50%] sm:[--r:50%] md:[--r:40%] [--t:50%] translate-y-[-45%] md:translate-y-[-25%] lg:translate-y-[3%]
+        [--r:50%] sm:[--r:50%] md:[--r:40%] [--t:50%] translate-y-[-30%] md:translate-y-[-25%] lg:translate-y-[3%]
       "
         >
             {/* center circle */}
